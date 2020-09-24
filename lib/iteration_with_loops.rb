@@ -15,8 +15,8 @@ def join_nested_strings(src)
       end
     element_index += 1
     end
-  long_strings << element_string
+  long_strings.join << element_string
   row_index += 1
   end
-  long_strings
+  long_strings.join
 end
