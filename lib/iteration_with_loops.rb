@@ -10,6 +10,7 @@ def join_nested_strings(src)
     element_string = []
     while element_index < src[row_index].count do
       if src[row_index][element_index].class == ""
+        binding.pry
         element_string += src[row_index][element_index]
       end
     element_index += 1
