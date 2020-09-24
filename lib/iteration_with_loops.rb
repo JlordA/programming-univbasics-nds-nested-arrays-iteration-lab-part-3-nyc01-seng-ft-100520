@@ -11,7 +11,7 @@ def join_nested_strings(src)
     while element_index < src[row_index].count do
       #binding.pry
       if src[row_index][element_index].class != ""
-        element_string += src[row_index][element_index]
+        element_string = src[row_index][element_index]
       end
     element_index += 1
     end
