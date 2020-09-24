@@ -7,10 +7,10 @@ def join_nested_strings(src)
   row_index = 0
   while row_index < src.count do
     element_index = 0
-    element_string = nil
+    element_string = ""
     while element_index < src[row_index].count do
       #binding.pry
-      if element_string == nil || src[row_index][element_index].class == String
+      if src[row_index][element_index].class == String
         element_string = src[row_index][element_index]
       end
     element_index += 1
