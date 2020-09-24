@@ -8,10 +8,11 @@ def join_nested_strings(src)
     element_string = []
     while element_index < src[row_index].count do
       if src[row_index][element_index] == ""
-        element_string = src[row_index][element_index]
+        element_string += src[row_index][element_index]
+      end
     end
   long_strings << element_string
   row_index += 1
   end
-  long_strings.join
+  long_strings
 end
